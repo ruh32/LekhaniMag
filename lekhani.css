@@ -1,8 +1,13 @@
+* {
+    margin: 0px;
+    padding: 0px;
+ }
 .hi{
     background-color: black;
 }
 .links{
     text-align: center;
+    padding: 2px;
     color: #a02884;
     font-family: 'Futura';
 }
@@ -26,6 +31,12 @@ a{
 .blog {
     background-color: black;
     color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+.blogWhite {
+    background-color: white;
+    color: black;
     padding: 20px;
     margin-top: 20px;
 }
