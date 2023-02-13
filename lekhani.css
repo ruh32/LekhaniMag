@@ -1,9 +1,9 @@
-body {
-background-color: #FFFADA ;
+.hi{
+    background-color: black;
 }
 .links{
     text-align: center;
-    color: #1a511a;
+    color: #a02884;
     font-family: 'Futura';
 }
 .title{
@@ -24,7 +24,8 @@ a{
     color: inherit;
 }
 .blog {
-    background-color: white;
+    background-color: black;
+    color: white;
     padding: 20px;
     margin-top: 20px;
 }
@@ -43,6 +44,8 @@ a{
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 8px;
+    background-color: white;
+    text-align: center;
 }
 .button {
     border: none;
