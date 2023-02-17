@@ -3,18 +3,19 @@
     padding: 0px;
  }
 .hi{
-    background-color: black;
+    background-color: white;
 }
 .links{
     text-align: center;
     padding: 2px;
-    color: #a02884;
-    font-family: 'Futura';
+    color: #3e0550;
+    font-family: 'Copperplate';
+    font-size: large;
 }
 .title{
     text-align: center;
     font-family: 'Playfair Display';
-    color: grey;
+    color: #a02884;
 }
 .blurb{
     text-align: center;
@@ -29,8 +30,8 @@ a{
     color: inherit;
 }
 .blog {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 20px;
     margin-top: 20px;
 }
@@ -58,20 +59,8 @@ a{
     background-color: white;
     text-align: center;
 }
-.button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
+.submit{
     text-align: center;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-.button:hover {
-    background-color: #555;
 }
 .container {
     padding: 0 16px;
@@ -81,12 +70,20 @@ a{
     clear: both;
     display: table;
 }
-.about-section {
+.about-section { /*banner*/
     padding: 50px;
     text-align: center;
-    background-color: #474e5d;
+    background-color: #a02884;
     color: white;
 }
+.about-section1 { /*bottom banner*/
+    padding: 50px;
+    font-size: 10px;
+    text-align: center;
+    background-color: #a02884;
+    color: white;
+}
+
 @media screen and (max-width: 650px) {
     .column {
       width: 100%;

@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+ }
+.hi{
+    background-color: white;
+}
+.links{
+    text-align: center;
+    padding: 2px;
+    color: #3e0550;
+    font-family: 'Copperplate';
+    font-size: large;
+}
+.title{
+    text-align: center;
+    font-family: 'Playfair Display';
+    color: #a02884;
+}
+.submit{
+    text-align: center;
+}
+button {
+    color: white;
+    padding: 16px 32px;
+    font-size: 16px;
+    text-align: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #3e0550;
+  }
+  button:hover {
+    background-color: #3e0550;
+    color: white;
+  }
+  .about-section1 { /*bottom banner*/
+    padding: 50px;
+    font-size: 10px;
+    text-align: center;
+    background-color: #a02884;
+    color: white;
+}
+@media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+}
