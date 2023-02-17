@@ -24,6 +24,7 @@ button {
     color: white;
     padding: 16px 32px;
     font-size: 16px;
+    font-family: Verdana;
     text-align: center;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -36,12 +37,31 @@ button {
     color: white;
   }
   .about-section1 { /*bottom banner*/
-    padding: 50px;
+    padding: 25px;
     font-size: 10px;
     text-align: center;
     background-color: #a02884;
     color: white;
 }
+body {
+    width: 100%;
+    float: left;
+  }
+  .class1 {
+    width: 49.8%;
+    float: left;
+    height: 100vh;
+    border-right: solid 2px black;
+  }
+  .class2{
+    width: 50%;
+    float: left;
+    height: 100vh;
+  }
+  p {
+    padding-top: 25px;
+    text-align: center;
+  }
 @media screen and (max-width: 650px) {
     .column {
       width: 100%;
