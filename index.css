@@ -1,0 +1,95 @@
+* {
+    margin: 0px;
+    padding: 0px;
+ }
+ .container {
+    position: absolute;
+    width: auto;
+    float: right;
+  }
+  .bg-img {
+    /* The image used */
+    background-image: url("edit.png");
+  
+    min-height: 100%;
+    min-width: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+  }
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  .topnav {
+    float: right;
+  }
+  /* Navbar links */
+  .topnav a {
+    float:left;
+    color: #3e0550;
+    text-align: center;
+    font-family: 'Copperplate';
+    padding: 30px 30px;
+    font-size: 25px;
+  }
+  
+  .dropbtn {
+    color:#3e0550;
+    text-align: center;
+    font-family: 'Copperplate';
+    background-color: transparent;
+    padding: 30px;
+    font-size: 25px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  .down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+@media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+}
