@@ -1,7 +1,8 @@
 * {
     margin: 0px;
     padding: 0px;
- }
+    box-sizing: border-box;
+}
 .hi{
     background-color: white;
 }
@@ -20,11 +21,23 @@
 .submit{
     text-align: center;
 }
-button {
+.poetry {
     color: white;
     padding: 16px 32px;
     font-size: 16px;
-    font-family: Verdana;
+    font-family: 'Poppins';
+    text-align: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #3e0550;
+  }
+  .art {
+    color: white;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-family: 'Poppins';
     text-align: center;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -55,7 +68,6 @@ button {
     float: left;
     height: 44vh;
     margin-top: 2px;
-    border-right: solid 2px black;
   }
   .class2{
     width: 50%;
@@ -77,12 +89,26 @@ button {
   }
   /* Navbar links */
   .topnav a {
-    float:left;
+    float: center;
     color: #3e0550;
     text-align: center;
     font-family: 'Copperplate';
     padding: 2px 2px;
     font-size: 18px;
+  }
+  
+  .topnav a:hover {
+    background-color:#3e0550;
+    color: white;
+    border: 1px solid #3e0550;
+    border-radius: 0.2em;
+    transition: 0.3s all;
+  }
+  
+  
+  .topnav a.active {
+    background-color: #BDF0D3; /*white*/
+    color: #096731; /*white*/
   }
   
   .dropbtn {
@@ -124,9 +150,181 @@ button {
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
 
+.footer{
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin-top: 150px;
+  width:100%;
+  padding: 10px 15%;
+  background: #a02884;
+  color: #efefef;
+  display: flex;
+   /* these two lines added to fix footer to the bottom of the page*/
+}
+.footer div{
+  text-align: center;
+}
+.col-2{
+  flex-grow: 2;
+}
+.footer div h3{
+  font-weight: 300;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.col-1 a{
+  display: block;
+  text-decoration: none;
+  color: #efefef;
+  margin-bottom: 10px;
+}
+form input{
+  width: 400px;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+}
+form button{
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.social-icons{
+  margin-top: 30px;
+}
+.social-icons a{
+  font-size: 22px;
+  margin: 10px;
+  cursor: pointer;
+  color: #fff
+}
 @media screen and (max-width: 650px) {
     .column {
       width: 100%;
       display: block;
     }
+}
+/* navigation bar */
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #3e0550;
+  color: #fff;
+}
+
+.nav-links a {
+  color: #fff;
+  font-family: 'Poppins';
+}
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color:#3e0550;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.services {
+  position: relative; 
+}
+
+.dropdown {
+  background-color: #3e0550;
+  padding: 1em 0;
+  position: absolute; /*WITH RESPECT TO PARENT*/
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #3e0550;
+  position: relative;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+
+/* collapsible */
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: left;
+  border: none;
+  font-family: 'Poppins';
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: none;
+  font-family: 'Poppins';
+  overflow: hidden;
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
