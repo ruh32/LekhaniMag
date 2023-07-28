@@ -62,85 +62,18 @@
 .bodies {
     width: 100%;
     float: left;
+    background-image: linear-gradient(#ffffff, #a02884);
   }
   .class1 {
-    width: 49.8%;
-    float: left;
-    height: 44vh;
+    width: 60%;
+    float: right;
     margin-top: 2px;
-  }
-  .class2{
-    width: 50%;
-    float: left;
-    height: 44vh;
+    margin-right: 275px;
+    margin-bottom: 75px;
   }
   p {
     padding-top: 25px;
-    text-align: center;
-  }
-
-  .container {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-  }
-  .topnav {
-    display: inline-block;
-  }
-  /* Navbar links */
-  .topnav a {
-    float: center;
-    color: #3e0550;
-    text-align: center;
-    font-family: 'Copperplate';
-    padding: 2px 2px;
-    font-size: 18px;
-  }
-  
-  .topnav a:hover {
-    background-color:#3e0550;
-    color: white;
-    border: 1px solid #3e0550;
-    border-radius: 0.2em;
-    transition: 0.3s all;
-  }
-  
-  
-  .topnav a.active {
-    background-color: #BDF0D3; /*white*/
-    color: #096731; /*white*/
-  }
-  
-  .dropbtn {
-    color:#3e0550;
-    text-align: center;
-    font-family: 'Copperplate';
-    background-color: transparent;
-    padding: 2px;
-    font-size: 18px;
-    border: none;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: absolute;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+    text-align: left;
   }
   
   /* Change color of dropdown links on hover */
@@ -289,8 +222,9 @@ form button{
 /* collapsible */
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  color: #444;
+  color: black;
   cursor: pointer;
+  background-color: transparent;
   padding: 18px;
   width: 70%;
   margin-left: 15%;
@@ -300,17 +234,17 @@ form button{
   font-family: 'Poppins';
   outline: none;
   transition: 0.4s;
+  font-size: 18px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color: transparent;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 18px;
-  background-color: white;
   width: 70%;
   margin-left: 15%;
   margin-right: 15%;
@@ -321,7 +255,6 @@ form button{
 .accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
-  color: #777;
   float: right;
   margin-left: 5px;
 }
